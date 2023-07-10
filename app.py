@@ -78,7 +78,7 @@ def main():
     if show_table:
         st.table(top_returns)
         
-        col1, col3 = st.columns([1,5])
+        col1, col2= st.columns([1,5])
         
         if col1.button("Reset Data"):
             show_table = False
@@ -87,7 +87,7 @@ def main():
         if top_returns.shape[0] > 0:
             top_symbol = top_returns.index[0]
             fig = plot_price_chart(top_symbol)
-            col3.pyplot(fig)
+            col2.pyplot(fig)
 
 if __name__ == "__main__":
     main()
