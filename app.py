@@ -1,8 +1,7 @@
-import streamlit as st
+import matplotlib.pyplot as plt
 from binance import Client
 import pandas as pd
-import matplotlib.pyplot as plt
-import base64
+import streamlit as st
 
 def get_top_returns(timeframe, lookback_period, nlargest):
     api_key = "698fxbgZzGtMht0gbeAJYsNgd93qX1oNbNSJTjqzzisb6wRvsm1VFhUPn8GlHAZr"
