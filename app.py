@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from binance import Client
+from binance.client import Client
 import pandas as pd
 import streamlit as st
 
